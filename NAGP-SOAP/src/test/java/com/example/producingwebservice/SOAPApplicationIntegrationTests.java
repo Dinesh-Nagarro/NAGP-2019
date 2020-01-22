@@ -49,7 +49,6 @@ public class SOAPApplicationIntegrationTests {
 		GetCountryRequest request = new GetCountryRequest();
 		request.setName("Spain");
 
-		assertThat(ws.marshalSendAndReceive("http://localhost:"
-				+ port + "/ws", request) != null);
-    }
+		assertThat(ws.marshalSendAndReceive("http://localhost:" + port + "/ws", request) != null);
+	}
 }
